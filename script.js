@@ -1,5 +1,5 @@
-document.getElementById('theme-toggle').addEventListener('change', (e) => {
-    if (e.target.checked) {
-        document.body.classList.add('darkBody');
-    }
+const toggle = document.getElementById('nav-toggle');
+
+toggle.addEventListener('change', () => {
+  document.body.classList.toggle('dark-mode');
 });
