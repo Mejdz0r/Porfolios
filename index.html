@@ -8,69 +8,78 @@
   <script src="./script.js" defer></script>
 </head>
 <body>
-
 <header>
   <nav>
     <ul>
-      <li><a href="#o-mnie">O mnie</a></li>
-      <li><a href="#umiejetnosci">Umiejętności</a></li>
-      <li><a href="#certyfikaty">Certyfikaty</a></li>
-      <li><a href="#projekty">Projekty</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="#o-mnie" data-i18n="about">O mnie</a></li>
+      <li><a href="#umiejetnosci" data-i18n="abilitys">Umiejętności</a></li>
+      <li><a href="#certyfikaty" data-i18n="certificates">Certyfikaty</a></li>
+      <li><a href="#projekty" data-i18n="projects">Projekty</a></li>
+      <li><a href="#kontakt" data-i18n="contact">Kontakt</a></li>
     </ul>
   </nav>
-   <input type="checkbox" id="nav-toggle" class="nav-toggle">
-  <label for="nav-toggle" class="nav-toggle-label">
- </label>
+
+  <section class="right-section">
+    <div class="lang-dropdown">
+      <button class="lang-btn" data-i18n="lang_btn">Język ▼</button>
+      <ul class="lang-menu">
+        <li><a href="#" data-lang="pl">Polski</a></li>
+        <li><a href="#" data-lang="en">English</a></li>
+      </ul>
+    </div>
+
+    <div class="dark-mode-container">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label"></label>
+    </div>
+  </section>
 </header>
+
 
 <main>
   <section id="o-mnie">
-    <h1>O mnie</h1>
-    <p>Jestem początkującym frontend developerem, pasjonuję się tworzeniem stron internetowych i chcę rozwijać swoje umiejętności w praktycznych projektach.
-      Lubię uczyć się nowych technologii i narzędzi, aby tworzyć nowoczesne i responsywne strony wciąż poszerzam swoją wiedzę w zakresie web developmentu m.in 
-      poprzez kursy online i samodzielne projekty. Również studiuję infomatykę stosowaną na Politechnice Bydgoskiej.
+    <h1 data-i18n="about-header:">O mnie</h1>
+    <p data-i18n="about-text">Jestem początkującym frontend developerem, pasjonuję się tworzeniem stron internetowych i chcę rozwijać swoje umiejętności w praktycznych projektach. Lubię uczyć się nowych technologii i narzędzi, aby tworzyć nowoczesne i responsywne strony. Wciąż poszerzam swoją wiedzę w zakresie web developmentu m.in poprzez kursy online i samodzielne projekty. Również studiuję infomatykę stosowaną na Politechnice Bydgoskiej.
     </p>
   </section>
 
   <section id="umiejetnosci">
-    <h2>Umiejętności</h2>
+    <h2 data-i18n="abilitys-header">Umiejętności</h2>
     <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>Responsive Design</li>
-      <li>Git / GitHub</li>
-      <li>SQL</li>
-      <li>PHP</li>
-      <li>Prompt engineering</li>
+      <li data-i18n="abilitys-1">HTML5</li>
+      <li data-i18n="abilitys-2">CSS3</li>
+      <li data-i18n="abilitys-3">JavaScript</li>
+      <li data-i18n="abilitys-4">Responsive Web Design</li>
+      <li data-i18n="abilitys-5">Git / GitHub</li>
+      <li data-i18n="abilitys-6">SQL</li>
+      <li data-i18n="abilitys-7">PHP</li>
+      <li data-i18n="abilitys-8">Prompt engineering</li>
     </ul>
   </section>
   <section id="certyfikaty">
-    <h2>Certyfikaty</h2>
+    <h2 data-i18n="certificates-header">Certyfikaty</h2>
     <a href="https://www.freecodecamp.org/certification/kacpermajorkiewicz/responsive-web-design" target="_blank"><img src="./Web design.png" alt="Web Design Certificate" width="300"></a>
     <a href="https://www.freecodecamp.org/certification/kacpermajorkiewicz/javascript-algorithms-and-data-structures-v8" target="_blank"><img src="./JS.png" alt="JavaScript Certificate" width="300"></a>
   </section>
 
   <section id="projekty">
-    <h2>Projekty</h2>
+    <h2 data-i18n="projects-header">Projekty</h2>
     <article>
-      <h3>Projekt 1 - Strona portfolio</h3>
-      <p>Strona pokazująca moje projekty, umiejętności, certyfikaty i dane kontaktowe. Dodatkowe funkcjonalności to m.in zmiana motywu strony oraz odsyłacze do potwierdzenia certyfikatów</p>
+      <h3 data-i18n="projects-1-header">Projekt 1 - Strona portfolio</h3>
+      <p data-i18n="projects-1-text">Strona pokazująca moje projekty, umiejętności i dane kontaktowe.</p>
     </article>
   </section>
 
   <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p>Email: <a href="mailto:kacper.majorkiewicz@gmail.com">kacper.majorkiewicz@gmail.com</a></p>
-    <p>Linkedin:<a href="https://www.linkedin.com/in/kacper-majorkiewicz-13421536b/" target="_blank">Przejdź do Linkedina</a></p>
+    <h2 data-i18n="contact-header">Kontakt</h2>
+    <p><span data-i18n="email">Email:</span> <a href="mailto:kacper.majorkiewicz@gmail.com">kacper.majorkiewicz@gmail.com</a></p>
+    <p><span data-i18n="linkedin">Linkedin:</span><a href="https://www.linkedin.com/in/kacper-majorkiewicz-13421536b/" target="_blank" data-i18n="gotolinkedin">Przejdź do Linkedina</a></p>
   </section>
 </main>
 
 <footer>
-  <p>© 2025 Kacper Majorkiewicz</p>
+  <p data-i18n="footer">© 2025 Kacper Majorkiewicz</p>
 </footer>
 
 </body>
 </html>
-
