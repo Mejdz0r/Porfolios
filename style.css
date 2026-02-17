@@ -5,7 +5,80 @@ body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.5; }
          display: flex;
     justify-content: space-between; 
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    z-index: 1000;
      }
+    
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.lang-dropdown {
+    position: relative; 
+    display: inline-block;
+}
+.lang-btn {
+    background-color: #333; 
+    color: #fff;
+    border: solid black 1px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+
+.lang-menu {
+    display: none;      
+    position: absolute;
+    top: 90%;          
+    right: 0;
+    background: #333;
+    list-style: none;
+    padding: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 1001;
+}
+.lang-menu::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: transparent;
+}
+
+.lang-dropdown:hover .lang-menu {
+    display: block;     
+}
+
+.lang-menu li {
+    cursor: pointer;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.lang-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.lang-menu li:hover {
+    background: #444;
+}
+
+
+.nav-toggle-label {
+    background-color: #555; 
+    display: inline-block;
+}
 .dark-mode {
     background-color: #121212;
     color: #f0f0f0;
@@ -63,7 +136,8 @@ body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.5; }
 }
     main { padding: 20px; 
         max-width: 900px; 
-        margin: auto; }
+        margin: 0 auto; 
+    padding-top: 80px;}
 
     section { margin-bottom: 40px; }
 
